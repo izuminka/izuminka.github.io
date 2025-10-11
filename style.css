@@ -437,12 +437,13 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
+	padding: 50px 0;
 }
 
 .mu-about-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
+	padding: 0;
 	width: 100%;
 }
 
@@ -461,14 +462,12 @@ button:focus {
 }
 
 .mu-about-content {
-	background-color: #fff;
+	background-color: transparent;
 	display: inline;
 	float: left;
 	margin-top: 70px;
 	padding: 20px;
 	width: 100%;
-	border-radius: 5px;
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .mu-about-content-left {
@@ -487,7 +486,7 @@ button:focus {
 
 .mu-about-content-right p {
 	margin-bottom: 6px;
-	color: #666;
+	color: #000;
 	line-height: 1.5;
 }
 
@@ -562,30 +561,6 @@ button:focus {
 
 }
 
-/*
-.mu-media{
-	display: inline;
-	float: left;
-	width: 100%;
-}
-
-.mu-media h3 {
-	margin-top: 20px;
-}
-
-.mu-media a {
-	border-radius: 50%;
-	display: inline-block;
-	font-size: 15px;
-	border: 1px solid #333;
-	width: 35px;
-	height: 35px;
-	line-height: 32px;
-	text-align: center;
-	margin: 5px 5px;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
-} */
 
 .mu-resume-btn {
 	margin-top: 30px;
@@ -675,6 +650,7 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
+	padding: 50px 0;
 }
 
 .mu-publications-header {
@@ -683,6 +659,14 @@ button:focus {
 	text-align: center;
 	padding: 0 120px;
 	width: 100%;
+}
+
+#mu-industry-experience {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+	padding: 50px 0;
 }
 
 .mu-industry-experience-header {
