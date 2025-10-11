@@ -690,6 +690,44 @@ button:focus {
 }
 
 /*--------------------*/
+/* PERSONAL */
+/*--------------------*/
+
+#mu-personal {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+	padding: 50px 0;
+}
+
+.mu-personal-header {
+	display: inline;
+	float: left;
+	text-align: center;
+	padding: 0 120px;
+	width: 100%;
+}
+
+.mu-personal-item {
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mu-personal-item p {
+	margin-bottom: 15px;
+	color: #000;
+	line-height: 1.6;
+}
+
+.mu-personal-item p:last-child {
+	margin-bottom: 0;
+}
+
+/*--------------------*/
 /* INDUSTRY EXPERIENCE */
 /*--------------------*/
 
