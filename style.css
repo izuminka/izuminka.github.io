@@ -111,9 +111,11 @@ img {
 }
 
 .mu-profile-img {
-	max-width: 60%;
+	max-width: 67% !important;
+	width: 67% !important;
 	height: auto;
 	border-radius: 10px;
+	margin-top: 6px !important;
 }
 
 code {
