@@ -38,6 +38,7 @@ body {
 	letter-spacing: 0.5px;
 	line-height: 1.5;
 	color: #1c1b1b;
+	padding-top: 80px;
 }
 
 ul {
@@ -107,6 +108,14 @@ img {
 	max-width: 75%;
 	/* margin-left: auto;
 	margin-right: auto; */
+}
+
+.mu-profile-img {
+	max-width: 67% !important;
+	width: 67% !important;
+	height: auto;
+	border-radius: 10px;
+	margin-top: 6px !important;
 }
 
 code {
@@ -252,19 +261,22 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
 	padding: 25px 0;
 	z-index: 999;
 	transition: all 0.5s;
+	background-color: rgba(255, 255, 255, 0.98);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-	color: #fff;
+	color: #333;
 	font-size: 35px;
 	font-family: 'Poppins', sans-serif;
 	margin-top: 0;
@@ -279,7 +291,10 @@ button:focus {
 #mu-header.mu-fixed-nav {
 	width: 100%;
 	position: fixed;
-	padding: 15px 0;
+	padding: 25px 0;
+	background-color: rgba(255, 255, 255, 0.98) !important;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -288,7 +303,7 @@ button:focus {
 /*--------------------*/
 
 .mu-navbar {
-	background-color: transparent;
+	background-color: transparent !important;
 	border: none;
 	border-radius: 0;
 	margin-bottom: 0;
@@ -300,7 +315,7 @@ button:focus {
 }
 
 .navbar-default .mu-menu li a {
-	color: #fff;
+	color: #333;
 	font-size: 20px;
 	font-weight: 400;
 	padding: 0;
@@ -310,7 +325,7 @@ button:focus {
 }
 
 .navbar-default .mu-menu li a::after {
-	background-color: #fff;
+	background-color: #333;
 	content: '';
 	height: 2px;
 	width: 100%;
@@ -327,7 +342,7 @@ button:focus {
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
 	background-color: transparent;
-	color: #fff;
+	color: #333;
 }
 
 .navbar-default .mu-menu li a:hover::after,
@@ -422,12 +437,13 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
+	padding: 50px 0;
 }
 
 .mu-about-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
+	padding: 0;
 	width: 100%;
 }
 
@@ -446,7 +462,7 @@ button:focus {
 }
 
 .mu-about-content {
-	background-color: #fff;
+	background-color: transparent;
 	display: inline;
 	float: left;
 	margin-top: 70px;
@@ -465,7 +481,13 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
-	font-size:18px;
+	font-size: 18px;
+}
+
+.mu-about-content-right p {
+	margin-bottom: 6px;
+	color: #000;
+	line-height: 1.5;
 }
 
 .mu-skill-progress-bar {
@@ -539,30 +561,6 @@ button:focus {
 
 }
 
-/*
-.mu-media{
-	display: inline;
-	float: left;
-	width: 100%;
-}
-
-.mu-media h3 {
-	margin-top: 20px;
-}
-
-.mu-media a {
-	border-radius: 50%;
-	display: inline-block;
-	font-size: 15px;
-	border: 1px solid #333;
-	width: 35px;
-	height: 35px;
-	line-height: 32px;
-	text-align: center;
-	margin: 5px 5px;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
-} */
 
 .mu-resume-btn {
 	margin-top: 30px;
@@ -641,6 +639,219 @@ button:focus {
 	float: center;
 	width: 100%;
 	font-size:18px;
+}
+
+/*--------------------*/
+/* PUBLICATIONS */
+/*--------------------*/
+
+#mu-publications {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+	padding: 50px 0;
+}
+
+.mu-publications-header {
+	display: inline;
+	float: left;
+	text-align: center;
+	padding: 0 120px;
+	width: 100%;
+}
+
+/*--------------------*/
+/* AWARDS */
+/*--------------------*/
+
+#mu-awards {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+	padding: 50px 0;
+}
+
+.mu-awards-header {
+	display: inline;
+	float: left;
+	text-align: center;
+	padding: 0 120px;
+	width: 100%;
+}
+
+.mu-award-item {
+	background-color: #fff;
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*--------------------*/
+/* PERSONAL */
+/*--------------------*/
+
+#mu-personal {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+	padding: 50px 0;
+}
+
+.mu-personal-header {
+	display: inline;
+	float: left;
+	text-align: center;
+	padding: 0 120px;
+	width: 100%;
+}
+
+.mu-personal-item {
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mu-personal-item p {
+	margin-bottom: 15px;
+	color: #000;
+	line-height: 1.6;
+}
+
+.mu-personal-item p:last-child {
+	margin-bottom: 0;
+}
+
+/*--------------------*/
+/* INDUSTRY EXPERIENCE */
+/*--------------------*/
+
+#mu-industry-experience {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+	padding: 50px 0;
+}
+
+.mu-industry-experience-header {
+	display: inline;
+	float: left;
+	text-align: center;
+	padding: 0 120px;
+	width: 100%;
+}
+
+.mu-industry-experience-item ul {
+	padding-left: 0 !important;
+	margin-left: 0 !important;
+	list-style-position: inside !important;
+}
+
+.mu-industry-experience-item li {
+	padding-left: 0 !important;
+	margin-left: 0 !important;
+	text-indent: 0 !important;
+}
+
+/* Link hover effects */
+a {
+	transition: all 0.3s ease;
+}
+
+a:hover {
+	text-decoration: underline !important;
+	transform: translateY(-1px);
+}
+
+/* Publication links hover effect */
+.mu-publication-item a:hover {
+	text-decoration: underline !important;
+}
+
+/* Company name links hover effect */
+.mu-industry-experience-item h4 a:hover {
+	text-decoration: underline !important;
+}
+
+/* Social media buttons hover effect */
+.mu-social-btn:hover {
+	background-color: #555;
+	transform: translateY(-2px);
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+/* Resume button hover effect */
+.mu-resume-btn:hover {
+	background-color: #555;
+	transform: translateY(-2px);
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+.mu-publication-item {
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mu-publication-item h4 {
+	color: #333;
+	margin-bottom: 10px;
+	font-size: 22px;
+}
+
+.mu-publication-item p {
+	margin-bottom: 6px;
+	color: #666;
+	line-height: 1.5;
+}
+
+.mu-scholar-btn {
+	background-color: #333;
+	border-radius: 4px;
+	transition: all 0.3s ease;
+	border: none;
+}
+
+.mu-scholar-btn:hover {
+	background-color: #555;
+	transform: translateY(-2px);
+}
+
+.mu-scholar-btn img {
+	filter: brightness(0) invert(1);
+}
+
+.mu-social-btn {
+	background-color: #333;
+	border-radius: 4px;
+	transition: all 0.3s ease;
+	color: #fff !important;
+}
+
+.mu-social-btn:hover {
+	background-color: #555;
+	transform: translateY(-2px);
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+.mu-social-btn img {
+	filter: brightness(0) invert(1);
+}
+
+.mu-resume-btn {
+	vertical-align: top;
+	display: inline-block;
 }
 
 /*--------------------*/
@@ -1358,7 +1569,7 @@ button:focus {
 @media (max-width: 640px){
 
 	#mu-header.mu-fixed-nav {
-		padding: 10px 0;
+		padding: 25px 0;
 	}
 
 	.mu-featured-slider-content {
