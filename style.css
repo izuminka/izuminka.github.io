@@ -38,6 +38,7 @@ body {
 	letter-spacing: 0.5px;
 	line-height: 1.5;
 	color: #1c1b1b;
+	padding-top: 80px;
 }
 
 ul {
@@ -107,6 +108,12 @@ img {
 	max-width: 75%;
 	/* margin-left: auto;
 	margin-right: auto; */
+}
+
+.mu-profile-img {
+	max-width: 60%;
+	height: auto;
+	border-radius: 10px;
 }
 
 code {
@@ -252,19 +259,22 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
 	padding: 25px 0;
 	z-index: 999;
 	transition: all 0.5s;
+	background-color: rgba(255, 255, 255, 0.98);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-	color: #fff;
+	color: #333;
 	font-size: 35px;
 	font-family: 'Poppins', sans-serif;
 	margin-top: 0;
@@ -279,7 +289,10 @@ button:focus {
 #mu-header.mu-fixed-nav {
 	width: 100%;
 	position: fixed;
-	padding: 15px 0;
+	padding: 25px 0;
+	background-color: rgba(255, 255, 255, 0.98) !important;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -288,7 +301,7 @@ button:focus {
 /*--------------------*/
 
 .mu-navbar {
-	background-color: transparent;
+	background-color: transparent !important;
 	border: none;
 	border-radius: 0;
 	margin-bottom: 0;
@@ -300,7 +313,7 @@ button:focus {
 }
 
 .navbar-default .mu-menu li a {
-	color: #fff;
+	color: #333;
 	font-size: 20px;
 	font-weight: 400;
 	padding: 0;
@@ -310,7 +323,7 @@ button:focus {
 }
 
 .navbar-default .mu-menu li a::after {
-	background-color: #fff;
+	background-color: #333;
 	content: '';
 	height: 2px;
 	width: 100%;
@@ -327,7 +340,7 @@ button:focus {
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
 	background-color: transparent;
-	color: #fff;
+	color: #333;
 }
 
 .navbar-default .mu-menu li a:hover::after,
@@ -1358,7 +1371,7 @@ button:focus {
 @media (max-width: 640px){
 
 	#mu-header.mu-fixed-nav {
-		padding: 10px 0;
+		padding: 25px 0;
 	}
 
 	.mu-featured-slider-content {
