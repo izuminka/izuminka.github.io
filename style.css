@@ -695,9 +695,43 @@ button:focus {
 	line-height: 1.5;
 }
 
-.mu-publication-item h4 a:hover {
-	color: #007bff !important;
-	text-decoration: underline !important;
+.mu-scholar-btn {
+	background-color: #333;
+	border-radius: 4px;
+	transition: all 0.3s ease;
+	border: none;
+}
+
+.mu-scholar-btn:hover {
+	background-color: #555;
+	transform: translateY(-2px);
+}
+
+.mu-scholar-btn img {
+	filter: brightness(0) invert(1);
+}
+
+.mu-social-btn {
+	background-color: #333;
+	border-radius: 4px;
+	transition: all 0.3s ease;
+	color: #fff !important;
+}
+
+.mu-social-btn:hover {
+	background-color: #555;
+	transform: translateY(-2px);
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+.mu-social-btn img {
+	filter: brightness(0) invert(1);
+}
+
+.mu-resume-btn {
+	vertical-align: top;
+	display: inline-block;
 }
 
 /*--------------------*/
