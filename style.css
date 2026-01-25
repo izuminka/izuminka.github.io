@@ -1709,6 +1709,16 @@ a:hover {
 		padding: 0 15px !important;
 	}
 
+	/* Reduce top spacing on landing page for mobile */
+	#mu-about {
+		padding-top: 20px !important;
+	}
+
+	.mu-about-content {
+		margin-top: 20px !important;
+		padding-top: 0 !important;
+	}
+
 	.mu-awards-content {
 		padding: 0 15px;
 	}
