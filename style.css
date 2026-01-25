@@ -145,7 +145,7 @@ kbd {
 	background-color: #ddd;
 	padding: 4px 6px;
 	border-radius: 2px;
-	color: ;
+	color: #333;
 }
 
 address {
@@ -667,6 +667,16 @@ button:focus {
 	width: 100%;
 }
 
+.mu-publications-content .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.mu-publications-content .col-md-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .mu-publication-item {
 	width: 100%;
 	box-sizing: border-box;
@@ -696,6 +706,16 @@ button:focus {
 	clear: both;
 	display: block;
 	width: 100%;
+}
+
+.mu-awards-content .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.mu-awards-content .col-md-12 {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .mu-award-item {
@@ -757,6 +777,16 @@ button:focus {
 	width: 100%;
 }
 
+.mu-personal-content .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.mu-personal-content .col-md-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .mu-personal-item {
 	background-color: #fff;
 	padding: 20px;
@@ -801,6 +831,16 @@ button:focus {
 	clear: both;
 	display: block;
 	width: 100%;
+}
+
+.mu-industry-experience-content .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.mu-industry-experience-content .col-md-12 {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .mu-industry-experience-item {
@@ -1665,6 +1705,37 @@ a:hover {
 
 	.mu-awards-content {
 		padding: 0 15px;
+	}
+
+	/* Remove spacing from first card in all sections */
+	.mu-publications-content .row,
+	.mu-awards-content .row,
+	.mu-personal-content .row,
+	.mu-industry-experience-content .row {
+		margin-top: 0 !important;
+	}
+
+	.mu-publications-content .row > div:first-child,
+	.mu-awards-content .row > div:first-child,
+	.mu-personal-content .row > div:first-child,
+	.mu-industry-experience-content .row > div:first-child {
+		padding-top: 0 !important;
+		margin-top: 0 !important;
+	}
+
+	.mu-publications-content .row > div:first-child > div,
+	.mu-awards-content .row > div:first-child > .mu-award-item,
+	.mu-personal-content .row > div:first-child > .mu-personal-item,
+	.mu-industry-experience-content .row > div:first-child > div {
+		margin-top: 0 !important;
+		padding-top: 15px !important;
+	}
+
+	.mu-publication-item:first-child,
+	.mu-award-item:first-child,
+	.mu-personal-item:first-child,
+	.mu-industry-experience-item:first-child {
+		margin-top: 0 !important;
 	}
 
 	.mu-award-flex {
