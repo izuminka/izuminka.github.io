@@ -1699,11 +1699,23 @@ a:hover {
 		margin-bottom: 25px;
 	}
 
-	.mu-awards-header {
+	/* Fix all section headers for mobile */
+	.mu-publications-header,
+	.mu-awards-header,
+	.mu-personal-header,
+	.mu-industry-experience-header,
+	.mu-about-header,
+	.mu-contact-header {
 		padding: 0 15px !important;
 	}
 
 	.mu-awards-content {
+		padding: 0 15px;
+	}
+
+	.mu-publications-content,
+	.mu-personal-content,
+	.mu-industry-experience-content {
 		padding: 0 15px;
 	}
 
