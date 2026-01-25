@@ -1,0 +1,25 @@
+# Site settings
+title: Pavel Dolin
+description: "Pavel Dolin - PhD student in Computer Science at Arizona State University. Research in AI/ML, reliability, scaling laws, and synthetic data generation."
+url: "https://paveldol.in"
+baseurl: ""
+
+# Author
+author:
+  name: Pavel Dolin
+  email: pavel.a.dolin@gmail.com
+
+# Social
+twitter_username: 
+github_username: izuminka
+linkedin_username: pavel-dolin
+
+# SEO
+google_site_verification: 
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+permalink: pretty
